@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+PATH="/usr/local/bin:$PATH"
+./lint.sh
+phpcs=`grep -c '' test/phpcs.diff`
+phpmd=`grep -c '<th>Problem</th>' test/test_phpmd.html`
+if [ $phpcs -gt 1 ] ; then
+  echo 'phpに構文エラーがある可能性があります。./composer/phpcs.difを確認してください。'
+  exit 1
+fi
