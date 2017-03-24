@@ -7,8 +7,8 @@ App::uses('AppController', 'Controller');
  * will inherit them.
  *
  */
-class LivesController extends AppController {
-
+class LivesController extends AppController
+{
     public $use = ['Live','Organizer'];
 
 
@@ -18,7 +18,6 @@ class LivesController extends AppController {
      */
     public function index()
     {
-
     }
 
     /**
@@ -28,7 +27,6 @@ class LivesController extends AppController {
      */
     public function show($id)
     {
-
     }
 
     /**
@@ -38,7 +36,5 @@ class LivesController extends AppController {
      */
     public function addGood($id)
     {
-
     }
-
 }

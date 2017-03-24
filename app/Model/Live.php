@@ -7,5 +7,6 @@ App::uses('AppModel', 'Model');
  * Add your application-wide methods in the class below, your models
  * will inherit them.
  */
-class LiveModel extends AppModel {
+class LiveModel extends AppModel
+{
 }
