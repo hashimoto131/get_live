@@ -9,13 +9,12 @@ App::uses('AppModel', 'Model');
  */
 class Organizer extends AppModel
 {
-
     public $hasMany = [
         'Live' => [
             'className' => 'Live',
             'foreignKey' => 'organizer_id',
-        ];
-    ]
+        ]
+    ];
 
     /**
      * 主催者の新規登録
@@ -72,7 +71,7 @@ class Organizer extends AppModel
     {
         $options = [
             'conditions' => [
-                'Service.id' => $id
+                'Organizer.id' => $id
             ]
         ];
         $results = $this->find('first', $options);
