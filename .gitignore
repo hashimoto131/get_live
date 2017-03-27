@@ -13,6 +13,7 @@ sitemap.xml.gz
 *.phar
 *.retry
 app/Plugin/*
+app/tmp/
 
 *.diff
 .php_cs.cache
