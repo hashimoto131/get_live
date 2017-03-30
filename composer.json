@@ -4,7 +4,8 @@
       "app/Plugin/Migrations": ["cakedc/migrations"],
       "app/Plugin/DebugKit": ["cakephp/debug_kit"],
       "app/Plugin/Fabricate": ["sizuhiko/fabricate"],
-      "app/Vendor/facebook": ["facebook/php-sdk"]
+      "app/Vendor/Facebook": ["facebook/php-sdk"],
+      "app/Vendor/Goutte": ["fabpot/goutte"]
     }
   },
   "require" : {
@@ -20,7 +21,8 @@
     "cakephp/cakephp-codesniffer": "dev-master",
     "friendsofphp/php-cs-fixer": "*",
     "phpmd/phpmd" : "*",
-    "sizuhiko/fabricate": "1.3.*"
+    "sizuhiko/fabricate": "1.3.*",
+    "fabpot/goutte" : "*"
   },
   "config": {
       "bin-dir" : "bin/"

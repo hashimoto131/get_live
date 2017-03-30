@@ -7,9 +7,9 @@ App::uses('AppModel', 'Model');
  * Add your application-wide methods in the class below, your models
  * will inherit them.
  */
-class LiveModel extends AppModel
+class Live extends AppModel
 {
-    public $name = 'Service';
+    public $name = 'Live';
 
     public $belongsTo = [
         'Organizer' => [
@@ -25,6 +25,7 @@ class LiveModel extends AppModel
      **/
     public function add($post)
     {
+        $this->log('いいいい');
         $result = $this->save($post);
         if ($result) {
             return $result;

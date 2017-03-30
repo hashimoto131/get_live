@@ -9,6 +9,8 @@ App::uses('AppModel', 'Model');
  */
 class Organizer extends AppModel
 {
+    public $name = 'Organizer';
+
     public $hasMany = [
         'Live' => [
             'className' => 'Live',
@@ -50,7 +52,7 @@ class Organizer extends AppModel
     /**
      * 主催者の一覧取得
      * @param null
-     * @return [array] 主催者全件
+     * @return [array] 主催者全件を返す
      **/
     public function all()
     {
